@@ -1,4 +1,6 @@
-package com.example.weatherapp
+package com.example.weatherapp.models
+
+import com.example.weatherapp.ForecastTemp
 
 data class DayForecast(
     val date: Long,

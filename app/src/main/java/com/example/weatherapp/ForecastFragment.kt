@@ -1,13 +1,12 @@
 package com.example.weatherapp
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.RecyclerView
 import com.example.weatherapp.databinding.FragmentForecastBinding
+import com.example.weatherapp.models.DayForecast
 
 
 ///class ForecastActivity : AppCompatActivity() {
