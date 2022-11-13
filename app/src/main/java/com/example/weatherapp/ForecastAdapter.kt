@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.weatherapp.models.DayForecast
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
@@ -65,16 +66,15 @@ class  ForecastViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         return formattedDate
     }
 
-    fun time (time:Long):String{
+    fun time(time: Long): String {
         val formatter = DateTimeFormatter.ofPattern("MMM dd")
         val dateTime = LocalDateTime.ofEpochSecond(time, 0, ZoneOffset.of("-5"))
-        val formattedDate = formatter.format(dateTime)
+        formatter.format(dateTime)
 
         val timeFormatter = DateTimeFormatter.ofPattern("h:mm a")
-        val formattedTime = timeFormatter.format(dateTime)
 
 
-        return formattedTime
+        return timeFormatter.format(dateTime)
 
 
     }
